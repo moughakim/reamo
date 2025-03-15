@@ -1,10 +1,12 @@
 import { ContactModal } from '@/components/ContactModal';
+import { SharePropertyModal } from '@/components/SharePropertyModal';
 import { useProperty } from '@/hooks/useProperty';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { ShareIcon } from '@heroicons/react/24/outline';
 import type { GetStaticProps, GetStaticPaths } from 'next';
 
 export default function PropertyDetailsPage() {
@@ -12,6 +14,7 @@ export default function PropertyDetailsPage() {
   const { id } = router.query;
   const { data: property, isLoading, error } = useProperty(id as string);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const { t } = useTranslation();
 
@@ -129,9 +132,11 @@ export default function PropertyDetailsPage() {
                   {property.location.state} {property.location.zipCode}
                 </p>
               </div>
-              <p className="text-3xl font-semibold text-blue-600">
-                ${property.price.toLocaleString()}
-              </p>
+              <div className="flex items-center gap-4">
+                <p className="text-3xl font-semibold text-blue-600">
+                  {property.price.toLocaleString()} DA
+                </p>
+              </div>
             </div>
 
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -178,12 +183,21 @@ export default function PropertyDetailsPage() {
               <h2 className="text-lg font-medium text-gray-900 mb-4">
                 {t('property.interested')}
               </h2>
-              <button
-                onClick={() => setIsContactModalOpen(true)}
-                className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              >
-                {t('property.contactBroker')}
-              </button>
+              <div className="space-y-3">
+                <button
+                  onClick={() => setIsContactModalOpen(true)}
+                  className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                >
+                  {t('property.contactBroker')}
+                </button>
+                <button
+                  onClick={() => setIsShareModalOpen(true)}
+                  className="w-full border border-gray-300 bg-white text-gray-700 px-4 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center justify-center"
+                >
+                  <ShareIcon className="h-5 w-5 mr-2 text-gray-400" aria-hidden="true" />
+                  {t('property.share')}
+                </button>
+              </div>
               <div className="mt-6 space-y-2 text-sm text-gray-500">
                 <p>{t('property.propertyId')}: {property.id}</p>
                 <p>{t('property.listed')}: {new Date(property.createdAt).toLocaleDateString()}</p>
@@ -197,6 +211,13 @@ export default function PropertyDetailsPage() {
           property={property}
           isOpen={isContactModalOpen}
           onClose={() => setIsContactModalOpen(false)}
+        />
+
+        <SharePropertyModal
+          isOpen={isShareModalOpen}
+          onClose={() => setIsShareModalOpen(false)}
+          propertyTitle={property?.title || ''}
+          propertyUrl={typeof window !== 'undefined' ? window.location.href : ''}
         />
       </div>
     </div>

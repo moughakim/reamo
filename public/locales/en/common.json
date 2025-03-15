@@ -22,7 +22,8 @@
     "listed": "Listed",
     "lastUpdated": "Last Updated",
     "details": "Property Details",
-    "propertiesInArea": "{{count}} Properties in this Area"
+    "propertiesInArea": "{{count}} Properties in this Area",
+    "share": "Share Property"
   },
   "filters": {
     "title": "Filters",
@@ -65,6 +66,8 @@
     "discoverProperties": "Discover your perfect property from our extensive collection",
     "expand": "Show Filters",
     "collapse": "Hide Filters",
-    "close": "Close"
+    "close": "Close",
+    "copy": "Copy Link",
+    "copied": "Link Copied!"
   }
 } 

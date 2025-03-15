@@ -22,7 +22,9 @@
     "listed": "تاريخ الإضافة",
     "lastUpdated": "آخر تحديث",
     "details": "تفاصيل العقار",
-    "propertiesInArea": "{{count}} عقار في هذه المنطقة"
+    "propertiesInArea": "{{count}} عقار في هذه المنطقة",
+    "share": "مشاركة العقار",
+    "type": "نوع العقار"
   },
   "filters": {
     "title": "التصفية",
@@ -65,6 +67,8 @@
     "discoverProperties": "اكتشف عقارك المثالي من مجموعتنا الواسعة",
     "expand": "إظهار الفلاتر",
     "collapse": "إخفاء الفلاتر",
-    "close": "إغلاق"
+    "close": "إغلاق",
+    "copy": "نسخ الرابط",
+    "copied": "تم نسخ الرابط!"
   }
 } 
