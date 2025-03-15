@@ -1,10 +1,9 @@
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, GlobeAltIcon, HomeIcon } from '@heroicons/react/24/outline';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
-import Image from 'next/image';
 
 const languages = [
   { code: 'en', name: 'English', dir: 'ltr' },
@@ -42,13 +41,7 @@ export function Layout({ children }: LayoutProps) {
                 <div className="flex">
                   <div className="flex flex-shrink-0 items-center">
                     <Link href="/">
-                      <Image
-                        width={32}
-                        height={32}
-                        className="h-8 w-auto"
-                        src="/logo.png"
-                        alt="Logo"
-                      />
+                      <HomeIcon className="h-8 w-8 text-blue-600 hover:text-blue-700 transition-colors" aria-label="Home" />
                     </Link>
                   </div>
                   <div className={`hidden sm:ml-6 sm:flex sm:space-x-8 ${isRTL ? 'sm:space-x-reverse' : ''}`}>
