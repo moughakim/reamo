@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "Home",
+    "residences": "Available Properties",
+    "about": "About",
+    "contact": "Contact",
+    "map": "Map View"
+  },
+  "property": {
+    "forSale": "For Sale",
+    "forRent": "For Rent",
+    "beds": "beds",
+    "baths": "baths",
+    "sqft": "sqft",
+    "yearBuilt": "Year Built",
+    "features": "Features",
+    "description": "Description",
+    "location": "Location",
+    "contactBroker": "Contact Broker",
+    "interested": "Interested in this property?",
+    "propertyId": "Property ID",
+    "listed": "Listed",
+    "lastUpdated": "Last Updated",
+    "details": "Property Details",
+    "propertiesInArea": "{{count}} Properties in this Area"
+  },
+  "filters": {
+    "title": "Filters",
+    "priceRange": "Price Range",
+    "propertyType": "Property Type",
+    "status": "Status",
+    "beds": "Bedrooms",
+    "search": "Search",
+    "city": "City",
+    "min": "Min",
+    "max": "Max",
+    "types": {
+      "house": "House",
+      "apartment": "Apartment",
+      "condo": "Condo",
+      "townhouse": "Townhouse",
+      "land": "Land",
+      "commercial": "Commercial"
+    },
+    "statuses": {
+      "forSale": "For Sale",
+      "forRent": "For Rent"
+    }
+  },
+  "contact": {
+    "title": "Contact Broker",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Send Message",
+    "close": "Close"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "notFound": "Not Found",
+    "backToListings": "Back to Listings",
+    "noProperties": "No properties found matching your criteria.",
+    "discoverProperties": "Discover your perfect property from our extensive collection",
+    "expand": "Show Filters",
+    "collapse": "Hide Filters",
+    "close": "Close"
+  }
+} 

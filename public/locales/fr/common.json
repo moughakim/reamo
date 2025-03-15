@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "residences": "Propriétés Disponibles",
+    "about": "À propos",
+    "contact": "Contact",
+    "map": "Vue Carte"
+  },
+  "property": {
+    "forSale": "À vendre",
+    "forRent": "À louer",
+    "beds": "chambres",
+    "baths": "salles de bain",
+    "sqft": "m²",
+    "yearBuilt": "Année de construction",
+    "features": "Caractéristiques",
+    "description": "Description",
+    "location": "Emplacement",
+    "contactBroker": "Contacter l'agent",
+    "interested": "Intéressé par ce bien ?",
+    "propertyId": "ID du bien",
+    "listed": "Listé le",
+    "lastUpdated": "Dernière mise à jour",
+    "details": "Détails du bien",
+    "propertiesInArea": "{{count}} Biens dans cette zone"
+  },
+  "filters": {
+    "title": "Filtres",
+    "priceRange": "Fourchette de prix",
+    "propertyType": "Type de bien",
+    "status": "Statut",
+    "beds": "Chambres",
+    "search": "Rechercher",
+    "city": "Ville",
+    "min": "Min",
+    "max": "Max",
+    "types": {
+      "house": "Maison",
+      "apartment": "Appartement",
+      "condo": "Condo",
+      "townhouse": "Maison de ville",
+      "land": "Terrain",
+      "commercial": "Commercial"
+    },
+    "statuses": {
+      "forSale": "À vendre",
+      "forRent": "À louer"
+    }
+  },
+  "contact": {
+    "title": "Contacter l'agent",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "message": "Message",
+    "submit": "Envoyer",
+    "close": "Fermer"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "notFound": "Non trouvé",
+    "backToListings": "Retour aux annonces",
+    "noProperties": "Aucun bien ne correspond à vos critères.",
+    "discoverProperties": "Découvrez votre propriété parfaite parmi notre collection",
+    "expand": "Afficher les filtres",
+    "collapse": "Masquer les filtres",
+    "close": "Fermer"
+  }
+} 

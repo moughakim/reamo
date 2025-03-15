@@ -1,0 +1,70 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "residences": "العقارات المتاحة",
+    "about": "من نحن",
+    "contact": "اتصل بنا",
+    "map": "عرض الخريطة"
+  },
+  "property": {
+    "forSale": "للبيع",
+    "forRent": "للإيجار",
+    "beds": "غرف نوم",
+    "baths": "حمامات",
+    "sqft": "متر مربع",
+    "yearBuilt": "سنة البناء",
+    "features": "المميزات",
+    "description": "الوصف",
+    "location": "الموقع",
+    "contactBroker": "اتصل بالوسيط",
+    "interested": "مهتم بهذا العقار؟",
+    "propertyId": "رقم العقار",
+    "listed": "تاريخ الإضافة",
+    "lastUpdated": "آخر تحديث",
+    "details": "تفاصيل العقار",
+    "propertiesInArea": "{{count}} عقار في هذه المنطقة"
+  },
+  "filters": {
+    "title": "التصفية",
+    "priceRange": "نطاق السعر",
+    "propertyType": "نوع العقار",
+    "status": "الحالة",
+    "beds": "غرف النوم",
+    "search": "بحث",
+    "city": "المدينة",
+    "min": "الحد الأدنى",
+    "max": "الحد الأقصى",
+    "types": {
+      "house": "منزل",
+      "apartment": "شقة",
+      "condo": "شقة تمليك",
+      "townhouse": "منزل متصل",
+      "land": "أرض",
+      "commercial": "تجاري"
+    },
+    "statuses": {
+      "forSale": "للبيع",
+      "forRent": "للإيجار"
+    }
+  },
+  "contact": {
+    "title": "اتصل بالوسيط",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "message": "الرسالة",
+    "submit": "إرسال",
+    "close": "إغلاق"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "خطأ",
+    "notFound": "غير موجود",
+    "backToListings": "العودة للقائمة",
+    "noProperties": "لم يتم العثور على عقارات تطابق معاييرك.",
+    "discoverProperties": "اكتشف عقارك المثالي من مجموعتنا الواسعة",
+    "expand": "إظهار الفلاتر",
+    "collapse": "إخفاء الفلاتر",
+    "close": "إغلاق"
+  }
+} 
