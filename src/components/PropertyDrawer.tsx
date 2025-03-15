@@ -3,6 +3,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { Property } from '@/types/property';
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
 
 interface PropertyDrawerProps {
   isOpen: boolean;
@@ -82,21 +83,17 @@ export function PropertyDrawer({ isOpen, onClose, properties }: PropertyDrawerPr
                               <div className="mt-2 max-w-xl text-sm text-gray-500">
                                 <p>{property.description}</p>
                               </div>
-                              <div className="mt-3 text-sm">
+                              <div className="mt-3 flex items-center justify-between">
                                 <span className="font-medium text-gray-900">
-                                  ${property.price.toLocaleString()}
+                                  {property.price.toLocaleString()} DA
                                 </span>
-                              </div>
-                              <div className="mt-5">
-                                <button
-                                  type="button"
-                                  className="inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                                  onClick={() => {
-                                    // Handle contact action
-                                  }}
+                                <Link
+                                  href={`/residences/${property.id}`}
+                                  target="_blank"
+                                  className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                                 >
-                                  {t('contact.contactUs')}
-                                </button>
+                                  {t('property.details')}
+                                </Link>
                               </div>
                             </div>
                           </div>

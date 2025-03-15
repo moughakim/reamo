@@ -22,7 +22,9 @@
     "listed": "Listé le",
     "lastUpdated": "Dernière mise à jour",
     "details": "Détails du bien",
-    "propertiesInArea": "{{count}} Biens dans cette zone"
+    "propertiesInArea": "{{count}} Biens dans cette zone",
+    "share": "Partager le bien",
+    "type": "Type de bien"
   },
   "filters": {
     "title": "Filtres",
@@ -65,6 +67,8 @@
     "discoverProperties": "Découvrez votre propriété parfaite parmi notre collection",
     "expand": "Afficher les filtres",
     "collapse": "Masquer les filtres",
-    "close": "Fermer"
+    "close": "Fermer",
+    "copy": "Copier le lien",
+    "copied": "Lien copié !"
   }
 } 

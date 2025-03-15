@@ -21,7 +21,7 @@ export default function MapPage() {
   const properties = filteredProperties();
 
   return (
-    <div className="h-[calc(100vh-4rem)]">
+    <div className="h-[calc(100vh-4rem)] bg-gray-50">
       <PropertyMap properties={properties} />
     </div>
   );
